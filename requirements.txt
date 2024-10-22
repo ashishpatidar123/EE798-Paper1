@@ -1,0 +1,14 @@
+numpy>=1.18.5
+torch>=1.7.1
+torchvision>=0.8.2
+Pillow>=8.0.0
+tqdm>=4.50.0
+omegaconf>=2.0.0
+pytorch_lightning==1.9.0
+imageio>=2.9.0
+lpips>=0.1.4
+einops>=0.3.0
+ignite>=0.4.7
+packaging>=20.0
+tensorflow==1.15.0  # Use TensorFlow 1.x compatible with tf.compat.v1
+scipy>=1.5.4
