@@ -14,13 +14,8 @@ Type ckpt_path to load the first_stage_model.
 CUDA_VISIBLE_DEVICES=<GPU_ID> python main.py --base configs/latent-diffusion/<config_spec>.yaml -t --gpus 0, --scale_lr False
 ```
 ### Super-Resolution
-run the below line with the exp file path obtained in the logs and mention the input low resolution image size and the scale ration upto which we want to scale
+run the below line with the exp file path obtained in the logs and mention the input low resolution image size and the scale ratio upto which we want to scale
 ```
 python eval_sr.py --exp logs/<exp_path> --lr_size <input_lr_image_size> --scale_ratio <scale>
 ```
-similar for the image generation
-### Image Generation
-```
-python inference.py --log_dir logs/<exp_path> --save_dir <output_path> --size <output_size_1> <output_size_2> ...
-```
-Measure the FID or SSIM between the real image and the generated image.
+
